@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GBS Bank </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <div class="header">
+            <div class="container" style="padding: 30px 0 0 0;">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav id="navbar" class="mobile-nav">
+                            <span><i class="mdi mdi-menu"></i></span>
+                            <ul class="mobile-ul keep">
+                                <a class="brand-logo" href="index.html" style="margin-bottom: 20px;">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                                <li class="m-menu-li">
+                                    <a href="index.html">
+                                        <span class="nav-text">
+                                        <b class="m-menu-b">Overview</b>
+                                        <i class="mdi mdi-view-dashboard "></i>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="withdraw.html">
+                                        <span class="nav-text">
+                                            <img src="images/font/withdraw.png" alt="">
+                                            <b class="m-menu-b">Withdraw</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="deposit.html">
+                                        <span class="nav-text">
+                                        <img src="images/font/deposit.png">
+                                        <b class="m-menu-b">Deposit</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="transfer.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-repeat "></i>
+                                        <b class="m-menu-b">Transfer</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li m-menu-active">
+                                    <a href="cards.html" class="active">
+                                        <span class="nav-text">
+                                        <img src="images/font/card.png">
+                                        <b class="m-menu-b-active">Cards</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="loans.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-repeat"></i>
+                                        <b class="m-menu-b">Loans</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="statement-request.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-repeat "></i>
+                                        <b class="m-menu-b">Statement R...</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="settings.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-settings "></i>
+                                        <b class="m-menu-b">Settings</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li class="m-menu-li">
+                                    <a href="help.html">
+                                        <span class="nav-text">
+                                        <i class="fa fa-question-circle-o"></i>
+                                        <b class="m-menu-b">Help</b>
+                                    </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar">
+                            <div class="dashboard_log">
+                                <div class="d-flex align-items-center">
+                                    <span class="thumb">
+                                        <i class="mdi mdi-bell"></i>
+                                        <i class="indicator"></i>
+                                    </span>
+                                    <div class="profile_log dropdown">
+                                        <div class="user" data-toggle="dropdown" aria-expanded="false">
+                                            <span style="height: 37px;padding: 13px;">
+                                                <span class="name">John Doe</span>
+                                            <span class="account-thumb"><i class="mdi mdi-account"></i></span>
+                                            </span>
+                                            <span class="arrow"><i class="la la-angle-down"></i></span>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="accounts.html" class="dropdown-item">
+                                                <i class="mdi mdi-account"></i> Account
+                                            </a>
+                                            <a href="history.html" class="dropdown-item">
+                                                <i class="la la-book"></i> History
+                                            </a>
+                                            <a href="settings.html" class="dropdown-item">
+                                                <i class="la la-cog"></i> Setting
+                                            </a>
+                                            <a href="lock.html" class="dropdown-item">
+                                                <i class="la la-lock"></i> Lock
+                                            </a>
+                                            <a href="signin.html" class="dropdown-item logout">
+                                                <i class="la la-sign-out"></i> Logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notification-menu notification-menu-right notification-menu-arrow keep">
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-thumbs-o-up"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just balance your loan.</p>
+                                            <div class="small text-muted">3 hours ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just placed for a loan.</p>
+                                            <div class="small text-muted">5 hour ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-cogs"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just downloaded your Banking Statement</p>
+                                            <div class="small text-muted">45 mintues ago</div>
+                                        </div>
+                                    </a>
+                                    <div class="notification-divider"></div>
+                                    <a href="#" class="notification-item text-center">View all Notification</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a class="brand-logo" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-view-dashboard"></i><b class="menu-b">Overview</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="withdraw.html">
+                            <span class="nav-text">
+                                <img src="images/font/withdraw.png" alt=""></i><b class="menu-b">Withdraw</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="deposit.html">
+                            <span class="nav-text">
+                                <img src="images/font/deposit.png"><b class="menu-b">Deposit</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transfer.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-repeat"></i><b class="menu-b">Transfer</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-active">
+                        <a href="cards.html" class="active">
+                            <span class="nav-text">
+                                <img src="images/font/card.png">
+<b class="menu-b">Cards</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loans.html">
+                            <span class="nav-text">
+                                <img src="images/font/loans.png" alt=""></i><b class="menu-b">Loans</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statement-request.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-repeat"></i><b class="menu-b">Statement Requ...est</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-settings"></i><b class="menu-b">Settings</b>
+                            </span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="help.html">
+                            <span class="nav-text">
+                                <i class="fa fa-question-circle-o"></i><b class="menu-b">Help</b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page_title ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-12 ">
+                        <div class="page_title-content ">
+                            <p>Credit Card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" style="padding-bottom: 45px;">
+                        <div class="row account-state_row">
+                            <div style="margin-bottom: 25px;">
+                                <div id="account-statement">
+                                    <p id="account-p">View and add all credit cards to your account.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-12">
+                                <div class="row">
+                                    <div class="row" style="padding-top: 30px;">
+                                        <div class="col-xl-1">
+                                            <h1 style="padding-top: 41px;color: #b9b9b9;"><i class="fa fa-angle-left"></i></h1>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <img src="images/card.png" style="width: 90%; height: 184px;">
+                                        </div>
+                                        <div style="width: 26px;"></div>
+                                        <div class="col-xl-4">
+                                            <img src="images/add-card.png" style="width: 107%; height: 183px;">
+                                        </div>
+                                        <div class="col-xl-1">
+                                            <h1 style="padding: 56px;"><i class="fa fa-angle-right"></i></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12" style="padding-top: 45px;">
+                                <div class="row account-state_row">
+                                    <div style="margin-bottom: 25px;">
+                                        <b>Withdrawal History</b>
+                                    </div>
+                                    <div id="table-mdiv">
+                                        <table class="table table-striped table-bordered border-top-0 border-bottom-0 dataTable no-footer">
+                                            <thead class="transact-thead">
+                                                <tr class="transact-tr">
+                                                    <th>Card No</th>
+                                                    <th>Expiry Date</th>
+                                                    <th>Security Code</th>
+                                                    <th>Card Pin</th>
+                                                    <th>Card Type</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>125577391851222</td>
+                                                    <td>06/12/2021</td>
+                                                    <td>1111</td>
+                                                    <td>2123</td>
+                                                    <td>Visa</td>
+                                                    <td style="color: #f1f101;">
+                                                        <button type="button" data-toggle="modal" data-target="#exampleModal" id="delete-card">Delete</button>
+                                                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                            <div class="modal-dialog" role="document">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-body">
+                                                                        <h3 id="modal-msg">Are You Sure You Want To<br> Delete This Card</h3>
+                                                                    </div>
+                                                                    <div class="" style="padding: 50px 0px 30px 30px;">
+                                                                        <button type="button" class="close-modal-btn" data-dismiss="modal">Close</button>
+                                                                        <button type="button" class="delete-modal-btn">Delete</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>125577391851222</td>
+                                                    <td>06/12/2021</td>
+                                                    <td>1111</td>
+                                                    <td>2123</td>
+                                                    <td>Visa</td>
+                                                    <td style="color: #047d8e;">
+                                                        <i class="fa fa-ellipsis-h perform-action" aria-expanded="false" data-toggle="dropdown"></i>
+                                                        <ul class="dropdown-menu" role="menu" x-placement="top-start">
+                                                            <li id="action-li"><a href="#">Action</a></li>
+                                                            <li id="action-li"><a type="button" data-toggle="modal" data-target="#exampleModal">Delete</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>125577391851222</td>
+                                                    <td>06/12/2021</td>
+                                                    <td>1111</td>
+                                                    <td>2123</td>
+                                                    <td>Visa</td>
+                                                    <td style="color: #047d8e;">
+                                                        <i class="fa fa-ellipsis-h perform-action" aria-expanded="false" data-toggle="dropdown"></i>
+                                                        <ul class="dropdown-menu" role="menu" x-placement="top-start">
+                                                            <li id="action-li"><a href="#">Action</a></li>
+                                                            <li id="action-li"><a type="button" data-toggle="modal" data-target="#exampleModal">Delete</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>125577391851222</td>
+                                                    <td>06/12/2021</td>
+                                                    <td>1111</td>
+                                                    <td>2123</td>
+                                                    <td>Visa</td>
+                                                    <td style="color: #047d8e;">
+                                                        <i class="fa fa-ellipsis-h perform-action" aria-expanded="false" data-toggle="dropdown"></i>
+                                                        <ul class="dropdown-menu" role="menu" x-placement="top-start">
+                                                            <li id="action-li"><a href="#">Action</a></li>
+                                                            <li id="action-li"><a type="button" data-toggle="modal" data-target="#exampleModal">Delete</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>125577391851222</td>
+                                                    <td>06/12/2021</td>
+                                                    <td>1111</td>
+                                                    <td>2123</td>
+                                                    <td>Visa</td>
+                                                    <td style="color: #047d8e;">
+                                                        <i class="fa fa-ellipsis-h perform-action" aria-expanded="false" data-toggle="dropdown"></i>
+                                                        <ul class="dropdown-menu" role="menu" x-placement="top-start">
+                                                            <li id="action-li"><a href="#">Action</a></li>
+                                                            <li id="action-li"><a type="button" data-toggle="modal" data-target="#exampleModal">Delete</a></li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot></tfoot>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-12" style="margin-left: 85px;">
+                                    <div class="dataTables_paginate paging_simple_numbers" id="example_paginate">
+                                        <ul class="pagination">
+                                            <li class="paginate_button page-item previous disabled" id="example_previous"><a href="#" aria-controls="example" data-dt-idx="0" tabindex="0" class="page-link"><i class="fa fa-angle-left"></i></a></li>
+                                            <li class="paginate_button page-item active"><a href="#" aria-controls="example" data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="2" tabindex="0" class="page-link">2</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="3" tabindex="0" class="page-link">3</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="4" tabindex="0" class="page-link">4</a></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0" class="page-link">5</a></li>
+                                            <li class="paginate_button"><b>...</b></li>
+                                            <li class="paginate_button page-item "><a href="#" aria-controls="example" data-dt-idx="5" tabindex="0" class="page-link">50</a></li>
+                                            <li class="paginate_button page-item next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0" class="page-link"><i class="fa fa-angle-right"></i></a></li>
+                                            <li class="paginate_button page-item next" id="example_next"><a href="#" aria-controls="example" data-dt-idx="6" tabindex="0" class="page-link">10 Page <i class="fa fa-angle-down"></i></a></li>
+                                            <li class="paginate_button">Go to</li>
+                                            <li class="paginate_button page-item next" id="example_next">
+                                                <input type="number" class="searchIndex page-link" name="searchIndex">
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                </div>
+                <div class="col-xl-10 footer-mdiv">
+                    <img src="images/footer-logo.png">
+                    <div style="float: right;">
+                        <span style="color: #fff;">
+                            <i class="fa fa-phone" style="margin-right: 11px;"></i>+1 931 322 222</span><br>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-twitter"></i></a>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-facebook"></i></a>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p id="footer-copyright">© 2021 GBS Bank</p>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- <script src="vendor/toastr/toastr.min.js"></script>
+    <script src="vendor/toastr/toastr-init.js"></script> -->
+
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/circle-progress/circle-progress-init.js"></script>
+
+
+    <!--  flot-chart js -->
+    <script src="vendor/apexchart/apexcharts.min.js"></script>
+    <script src="vendor/apexchart/apexchart-init.js"></script>
+    <script src="vendor/apexchart/apexchart2-init.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $('.mobile-nav').click(function() {
+            $('.mobile-ul').removeClass('keep');
+        });
+    </script>
+</body>
+
+</html>

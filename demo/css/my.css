@@ -1,0 +1,90 @@
+.nav-menu {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    /* Neutral / White */
+    background: #FFFFFF;
+    /* navigation menu / vertical shadow */
+    box-shadow: 4px 0px 16px rgba(16, 30, 115, 0.08);
+}
+
+.component {
+    position: absolute;
+    width: 178px;
+    height: 472px;
+    left: 39px;
+    top: 134px;
+}
+
+.nav-img {
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+.menu1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    left: 0%;
+    right: 38.2%;
+    top: 0%;
+    bottom: 94.92%;
+}
+
+.nav-text1 {
+    position: static;
+    width: 70px;
+    height: 19px;
+    left: 40px;
+    top: 2.5px;
+    font-family: Avenir Next LT Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 16px;
+}
+
+.vector {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #333333;
+}
+
+ul {
+    padding-left: 2rem;
+}
+
+ol,
+ul,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+    margin-bottom: 0;
+}

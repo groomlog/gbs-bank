@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GBS Bank </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <div class="header">
+            <div class="container" style="padding: 30px 0 0 0;">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav id="navbar" class="mobile-nav">
+                            <span><i class="mdi mdi-menu"></i></span>
+                            <ul class="mobile-ul keep">
+                                <a class="brand-logo" href="index.html" style="margin-bottom: 20px;">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                                <li class="m-menu-li">
+                                    <a href="index.html">
+                                        <span class="nav-text">
+                                            <b class="m-menu-b">Overview</b>
+                                            <i class="mdi mdi-view-dashboard "></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="withdraw.html">
+                                        <span class="nav-text">
+                                            <img src="images/font/withdraw.png" alt="">
+                                            <b class="m-menu-b">Withdraw</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li m-menu-active">
+                                    <a href="deposit.html" class="active">
+                                        <span class="nav-text">
+                                            <img src="images/font/deposit.png">
+                                            <b class="m-menu-b-active">Deposit</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="transfer.html">
+                                        <span class="nav-text">
+                                            <i class="mdi mdi-repeat "></i>
+                                            <b class="m-menu-b">Transfer</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="cards.html">
+                                        <span class="nav-text">
+                                            <img src="images/font/cards.png" alt="">
+                                            <b class="m-menu-b">Cards</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="loans.html">
+                                        <span class="nav-text">
+                                            <img src="images/font/loans.png" alt="">
+                                            <b class="m-menu-b">Loans</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="statement-request.html">
+                                        <span class="nav-text">
+                                            <i class="mdi mdi-repeat "></i>
+                                            <b class="m-menu-b">Statement R...</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="settings.html">
+                                        <span class="nav-text">
+                                            <i class="mdi mdi-settings "></i>
+                                            <b class="m-menu-b">Settings</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li class="m-menu-li">
+                                    <a href="help.html">
+                                        <span class="nav-text">
+                                            <i class="fa fa-question-circle-o"></i>
+                                            <b class="m-menu-b">Help</b>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar">
+                            <div class="dashboard_log">
+                                <div class="d-flex align-items-center">
+                                    <span class="thumb">
+                                        <i class="mdi mdi-bell"></i>
+                                        <i class="indicator"></i>
+                                    </span>
+                                    <div class="profile_log dropdown">
+                                        <div class="user" data-toggle="dropdown" aria-expanded="false">
+                                            <span style="height: 37px;padding: 13px;">
+                                                <span class="name">John Doe</span>
+                                            <span class="account-thumb"><i class="mdi mdi-account"></i></span>
+                                            </span>
+                                            <span class="arrow"><i class="la la-angle-down"></i></span>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="accounts.html" class="dropdown-item">
+                                                <i class="mdi mdi-account"></i> Account
+                                            </a>
+                                            <a href="history.html" class="dropdown-item">
+                                                <i class="la la-book"></i> History
+                                            </a>
+                                            <a href="settings.html" class="dropdown-item">
+                                                <i class="la la-cog"></i> Setting
+                                            </a>
+                                            <a href="lock.html" class="dropdown-item">
+                                                <i class="la la-lock"></i> Lock
+                                            </a>
+                                            <a href="signin.html" class="dropdown-item logout">
+                                                <i class="la la-sign-out"></i> Logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notification-menu notification-menu-right notification-menu-arrow keep">
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-thumbs-o-up"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just balance your loan.</p>
+                                            <div class="small text-muted">3 hours ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just placed for a loan.</p>
+                                            <div class="small text-muted">5 hour ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-cogs"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just downloaded your Banking Statement</p>
+                                            <div class="small text-muted">45 mintues ago</div>
+                                        </div>
+                                    </a>
+                                    <div class="notification-divider"></div>
+                                    <a href="#" class="notification-item text-center">View all Notification</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a class="brand-logo" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-view-dashboard "></i><b class="menu-b">Overview</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="withdraw.html">
+                            <span class="nav-text">
+                                <img src="images/font/withdraw.png" alt=""><b class="menu-b">Withdraw</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="menu-active">
+                        <a href="deposit.html" class="active">
+                            <span class="nav-text">
+                                <img src="images/font/deposit.png"><b class="menu-b">Deposit</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transfer.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-repeat "></i><b class="menu-b">Transfer</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cards.html">
+                            <span class="nav-text">
+                                <img src="images/font/card.png" alt=""><b class="menu-b">Cards</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loans.html">
+                            <span class="nav-text">
+                                <img src="images/font/loans.png" alt=""></i><b class="menu-b">Loans</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statement-request.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-repeat "></i><b class="menu-b">Statement Requ...est</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-settings "></i><b class="menu-b">Settings</b>
+                            </span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="help.html">
+                            <span class="nav-text">
+                                <i class="fa fa-question-circle-o"></i><b class="menu-b">Help</b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="page_title ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-12 ">
+                        <div class="page_title-content ">
+                            <p>Profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" style="padding-bottom: 45px;">
+                        <div class="row account-state_row">
+                            <div style="margin-bottom: 25px;">
+                                <div id="account-statement">
+                                    <p id="account-p">Deposit into your GBS Bank account via or any of your cards.</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-xxl-6">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Crypto Deposit</p>
+                                        <p id="account-p">Send bitcoin (BTC) only to the adress below</p>
+                                        <p></p>
+                                        <input type="text" name="code" value="QX1197b8A773aEsj91DjY" id="" class="form-control deposit-input">
+                                        <p id="account-p" style="padding: 0;">OR Scan QR</p>
+                                        <div style="    padding: 50px 70px 50px 80px;">
+                                            <img src="images/chart.png">
+                                        </div>
+                                        <label style="padding: 0;" for="hash">Enter Transaction Hash</label>
+                                        <input type="text" name="code" value="00000000000000" id="" class="form-control help-select">
+                                        <button class="deposit-button">Confirm Payment</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-xxl-6">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Card Deposit</p>
+                                        <p id="account-p">Make deposit with your card.</p>
+                                        <b style="font-size: 12px;">Choose Card</b>
+                                        <div class="row">
+                                            <div class="col-xl-1">
+                                                <a href="" id="switch-card"><i class="fa fa-angle-left"></i></a>
+                                            </div>
+                                            <img src="images/card2.png" class="" style="width: 270px;">
+                                            <div class="col-xl-1">
+                                                <a href="" id="switch-card"><i class="fa fa-angle-right"></i></a>
+                                            </div>
+                                        </div>
+                                        <label style="padding: 20px 0px 0px 0px;" for="hash">Card Number</label>
+                                        <input type="text" name="code" value="0 0 0 0    0 0 0 0    0 0 0    0 0 0" id="" class="form-control hash-input">
+                                        <div class="col-xl-6 hash-col">
+                                            <label style="padding: 0;" for="hash">Card Number</label>
+                                            <input type="text" name="code" value="02/04" id="" class="form-control hash-input">
+                                        </div>
+                                        <div class="col-xl-6 hash-col">
+                                            <label style="padding: 0;" for="hash">Security Code</label>
+                                            <input type="text" name="code" value="121" id="" class="form-control hash-input">
+                                        </div>
+                                        <div class="col-xl-6 hash-col">
+                                            <label style="padding: 0;" for="hash">Account Pin</label>
+                                            <input type="text" name="code" value="02/04" id="" class="form-control hash-input">
+                                        </div>
+                                        <button class="deposit-button">Make Payment</button>
+                                        <p id="account-p">Credit Balance <b>$73,287.51</b></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                </div>
+                <div class="col-xl-10 footer-mdiv">
+                    <img src="images/footer-logo.png">
+                    <div style="float: right;">
+                        <span style="color: #fff;">
+                            <i class="fa fa-phone" style="margin-right: 11px;"></i>+1 931 322 222</span><br>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-twitter"></i></a>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-facebook"></i></a>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p id="footer-copyright">© 2021 GBS Bank</p>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- <script src="vendor/toastr/toastr.min.js"></script>
+    <script src="vendor/toastr/toastr-init.js"></script> -->
+
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/circle-progress/circle-progress-init.js"></script>
+
+
+    <!--  flot-chart js -->
+    <script src="vendor/apexchart/apexcharts.min.js"></script>
+    <script src="vendor/apexchart/apexchart-init.js"></script>
+    <script src="vendor/apexchart/apexchart2-init.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

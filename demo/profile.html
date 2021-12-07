@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GBS Bank </title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+    <!-- Custom Stylesheet -->
+
+    <link rel="stylesheet" href="vendor/toastr/toastr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="main-wrapper">
+        <div class="header">
+            <div class="container" style="padding: 30px 0 0 0;">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <nav id="navbar" class="mobile-nav">
+                            <span><i class="mdi mdi-menu"></i></span>
+                            <ul class="mobile-ul keep">
+                                <a class="brand-logo" href="index.html" style="margin-bottom: 20px;">
+                                    <img src="images/logo.png" alt="">
+                                </a>
+                                <li class="m-menu-li m-menu-active">
+                                    <a href="index.html" class="active">
+                                        <span class="nav-text">
+                                        <b class="m-menu-b-active">Overview</b>
+                                        <i class="mdi mdi-view-dashboard "></i>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="withdraw.html">
+                                        <span class="nav-text">
+                                            <img src="images/font/withdraw.png" alt="">
+                                        <b class="m-menu-b">Withdraw</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="deposit.html">
+                                        <span class="nav-text">
+                                        <img src="images/font/deposit.png">
+                                        <b class="m-menu-b">Deposit</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="transfer.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-repeat"></i>
+                                        <b class="m-menu-b">Transfer</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="cards.html">
+                                        <span class="nav-text">
+                                        <img src="images/font/card.png">
+                                        <b class="m-menu-b">Cards</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="loans.html">
+                                        <span class="nav-text">
+                                            <img src="images/font/loans.png" alt="">
+                                            <b class="m-menu-b">Loans</b>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="statement-request.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-repeat "></i>
+                                        <b class="m-menu-b">Statement R...</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <li class="m-menu-li">
+                                    <a href="settings.html">
+                                        <span class="nav-text">
+                                        <i class="mdi mdi-settings "></i>
+                                        <b class="m-menu-b">Settings</b>
+                                    </span>
+                                    </a>
+                                </li>
+                                <hr>
+                                <li class="m-menu-li">
+                                    <a href="help.html">
+                                        <span class="nav-text">
+                                        <i class="fa fa-question-circle-o"></i>
+                                        <b class="m-menu-b">Help</b>
+                                    </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <nav class="navbar">
+                            <div class="dashboard_log">
+                                <div class="d-flex align-items-center">
+                                    <span class="thumb">
+                                        <i class="mdi mdi-bell"></i>
+                                        <i class="indicator"></i>
+                                    </span>
+                                    <div class="profile_log dropdown">
+                                        <div class="user" data-toggle="dropdown" aria-expanded="false">
+                                            <span style="height: 37px;padding: 13px;">
+                                                <span class="name">John Doe</span>
+                                            <span class="account-thumb"><i class="mdi mdi-account"></i></span>
+                                            </span>
+                                            <span class="arrow"><i class="la la-angle-down"></i></span>
+                                        </div>
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <a href="accounts.html" class="dropdown-item">
+                                                <i class="mdi mdi-account"></i> Account
+                                            </a>
+                                            <a href="history.html" class="dropdown-item">
+                                                <i class="la la-book"></i> History
+                                            </a>
+                                            <a href="settings.html" class="dropdown-item">
+                                                <i class="la la-cog"></i> Setting
+                                            </a>
+                                            <a href="lock.html" class="dropdown-item">
+                                                <i class="la la-lock"></i> Lock
+                                            </a>
+                                            <a href="signin.html" class="dropdown-item logout">
+                                                <i class="la la-sign-out"></i> Logout
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="notification-menu notification-menu-right notification-menu-arrow keep">
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-thumbs-o-up"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just balance your loan.</p>
+                                            <div class="small text-muted">3 hours ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-commenting-o"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just placed for a loan.</p>
+                                            <div class="small text-muted">5 hour ago</div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="notification-item d-flex pb-3">
+                                        <div class="notifyimg">
+                                            <i class="fa fa-cogs"></i>
+                                        </div>
+                                        <div>
+                                            <p class="notification-p">You just downloaded your Banking Statement</p>
+                                            <div class="small text-muted">45 mintues ago</div>
+                                        </div>
+                                    </a>
+                                    <div class="notification-divider"></div>
+                                    <a href="#" class="notification-item text-center">View all Notification</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a class="brand-logo" href="index.html">
+                <img src="images/logo.png" alt="">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-view-dashboard"></i><b class="menu-b">Overview</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="withdraw.html">
+                            <span class="nav-text">
+                                <img src="images/font/withdraw.png" alt=""></i><b class="menu-b">Withdraw</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="deposit.html">
+                            <span class="nav-text">
+                                <img src="images/font/deposit.png"><b class="menu-b">Deposit</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transfer.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-repeat"></i><b class="menu-b">Transfer</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cards.html">
+                            <span class="nav-text">
+                                <img src="images/font/card.png">
+                                <b class="menu-b">Cards</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loans.html">
+                            <span class="nav-text">
+                                <img src="images/font/loans.png" alt=""></i><b class="menu-b">Loans</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="statement-request.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-repeat"></i><b class="menu-b">Statement Requ...est</b>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <span class="nav-text">
+                                <i class="mdi mdi-settings"></i><b class="menu-b">Settings</b>
+                            </span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="help.html">
+                            <span class="nav-text">
+                                <i class="fa fa-question-circle-o"></i><b class="menu-b">Help</b>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="page_title ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-xl-12 ">
+                        <div class="page_title-content ">
+                            <p>Profile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12" style="padding-bottom: 45px;">
+                        <div class="row account-state_row">
+                            <div style="margin-bottom: 25px;">
+                                <div id="account-statement">
+                                    <p id="account-p">View your profile information</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-xxl-12">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Personal Information</p>
+                                        <a class="profile-tile_a" href="#">
+                                            <span style="float: right;"><i class="fa fa-pencil"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="my-info" style="width: 55%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Full Name</p>
+                                                <p style="font-size: 15px;">Teejay Teko</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Email</p>
+                                                <p style="font-size: 15px;">teejay@gmail.com</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Mobile Number</p>
+                                                <p style="font-size: 15px;">081234567890</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Date of Birth</p>
+                                                <p style="font-size: 15px;">6th, December 2020</p>
+                                            </div>
+                                        </div>
+                                        <div id="my-info" style="width: 45%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Residential Address</p>
+                                                <p style="font-size: 15px;">Lagos, Nigeria</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Postal/Zip Code</p>
+                                                <p style="font-size: 15px;">1222111112</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">City/State</p>
+                                                <p style="font-size: 15px;">Delta State</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Country</p>
+                                                <p style="font-size: 15px;">Nigeria</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-xxl-12">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Bank Information</p>
+                                        <a class="profile-tile_a" href="#">
+                                            <span style="float: right;"><i class="fa fa-pencil"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="my-info" style="width: 55%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Bank Account Name</p>
+                                                <p style="font-size: 15px;">Teejay Teko</p>
+                                            </div>
+                                        </div>
+                                        <div id="my-info" style="width: 45%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Account</p>
+                                                <p style="font-size: 15px;">1234567890</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-xxl-12">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Employment Information</p>
+                                        <a class="profile-tile_a" href="#">
+                                            <span style="float: right;"><i class="fa fa-pencil"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="my-info" style="width: 55%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Employer's Name</p>
+                                                <p style="font-size: 15px;">Teejay Teko</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Nature of Employment</p>
+                                                <p style="font-size: 15px;">1234567890</p>
+                                            </div>
+                                        </div>
+                                        <div id="my-info" style="width: 45%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Estimated Salary Range</p>
+                                                <p style="font-size: 15px;">$2300.00</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Address of Employer</p>
+                                                <p style="font-size: 15px;">Lagos, Nigeria</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-xxl-12">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Next of Kin Details</p>
+                                        <a class="profile-tile_a" href="#">
+                                            <span style="float: right;"><i class="fa fa-pencil"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="my-info" style="width: 55%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Full Name</p>
+                                                <p style="font-size: 15px;">Teejay Teko</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Email</p>
+                                                <p style="font-size: 15px;">teejay@gmail.com</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Mobile Number</p>
+                                                <p style="font-size: 15px;">081234567890</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Residential Address</p>
+                                                <p style="font-size: 15px;">Lagos, Nigeria</p>
+                                            </div>
+                                        </div>
+                                        <div id="my-info" style="width: 45%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Age Bracket</p>
+                                                <p style="font-size: 15px;">65 years</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Relationship</p>
+                                                <p style="font-size: 15px;">Mother</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Occupation</p>
+                                                <p style="font-size: 15px;">Banker</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-xxl-12">
+                                <div class="card" style="padding: 50px;">
+                                    <div class="row">
+                                        <p class="profile-title">Security Details</p>
+                                        <a class="profile-tile_a" href="#">
+                                            <span style="float: right;"><i class="fa fa-pencil"></i></span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="my-info" style="width: 55%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Security Question 1</p>
+                                                <p style="font-size: 15px;">Teejay Teko</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Security Question 2</p>
+                                                <p style="font-size: 15px;">teejay@gmail.com</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Account in</p>
+                                                <p style="font-size: 15px;">081234567890</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Residential Address</p>
+                                                <p style="font-size: 15px;">Lagos, Nigeria</p>
+                                            </div>
+                                        </div>
+                                        <div id="my-info" style="width: 45%;">
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Answer 1</p>
+                                                <p style="font-size: 15px;">65 years</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Answer 2</p>
+                                                <p style="font-size: 15px;">Mother</p>
+                                            </div>
+                                            <div style="margin-bottom: 10px;">
+                                                <p class="profile-details">Social Security Number</p>
+                                                <p style="font-size: 15px;">Banker</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                </div>
+                <div class="col-xl-10 footer-mdiv">
+                    <img src="images/footer-logo.png">
+                    <div style="float: right;">
+                        <span style="color: #fff;">
+                            <i class="fa fa-phone" style="margin-right: 11px;"></i>+1 931 322 222</span><br>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-twitter"></i></a>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-facebook"></i></a>
+                        <a href="twitter.com" class="footer-a"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p id="footer-copyright">© 2021 GBS Bank</p>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- <script src="vendor/toastr/toastr.min.js"></script>
+    <script src="vendor/toastr/toastr-init.js"></script> -->
+
+    <script src="vendor/circle-progress/circle-progress.min.js"></script>
+    <script src="vendor/circle-progress/circle-progress-init.js"></script>
+
+
+    <!--  flot-chart js -->
+    <script src="vendor/apexchart/apexcharts.min.js"></script>
+    <script src="vendor/apexchart/apexchart-init.js"></script>
+    <script src="vendor/apexchart/apexchart2-init.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+
+    <script>
+        $('.mobile-nav').click(function() {
+            $('.mobile-ul').removeClass('keep');
+        });
+    </script>
+</body>
+
+</html>
