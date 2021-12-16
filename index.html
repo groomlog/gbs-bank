@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>GBS Bank</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  
+  <div id="overlay" >
+   
+    <div id="text">
+      <div class="row">
+          <div class="col-md-8" onclick="off()">
+             
+          </div>
+          <div style="background-color: white;" class="col-md-4">
+           
+          <div class="">
+              <form action="" method="post" role="form" class="my-5">
+                  <div class="row">
+                      <center><h3 class="p-reg" style="font-weight: 700;">Fill the Form</h3></center>   
+                  <div class="form-group col-md-10 offset-1">
+                      <label class="" for=""><b>Full Name</b></label>
+                      <input type="text" name="name" class="  form-control" id="name" placeholder="Enter full name" required>
+                  </div>
+               
+                  <div class="form-group col-md-10 offset-1">
+                  <label class="" for=""><b>Phone Number</b></label>
+                      <input type="digit" class=" form-control" name="phonenumber" id="phonenumber" placeholder="Enter Phone Number" required>
+                  </div>
+                  <div class="form-group col-md-10 offset-1">
+                  <label class="" for=""><b>Email</b></label>
+                      <input type="email" class=" form-control" name="email" id="email" placeholder="Enter Email" required>
+                  </div>
+                  <div class="form-group col-md-10 offset-1">
+                  <label class="" for=""><b>Name of Officer</b></label>
+                      <input type="email" class=" form-control" name="email" id="email" placeholder="Enter Email" required>
+                  </div>
+                  <div class="form-group  col-md-10 offset-1">
+                  <label class="" for=""><b>Name of Conduct and Remarks</b></label>
+                  <textarea class=" form-control" name="message" rows="2" placeholder="Enter Message or request" required></textarea>
+                  </div>
+                  <div class="text-center ">
+                    <button class="col-md-8  btn btn-primary" style="background-color: #047D8E; font-weight: 150;" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <!-- <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/gbs bank logo.png" alt=""><span>.</span></a></h1> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo me-auto"><img src="assets/img/gbs bank logo.png" alt=""></a>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+         <!-- <li><a class="nav-link scrollto"  onclick="on()"  data-toggle="modal" data-target="#exampleModalLong" >Register</a></li>-->
+          <li><a class="nav-link scrollto" style="  cursor: pointer;" onclick="on()" >Register</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="login.html"  class="get-started-btn scrollto">Login</a>
+    </div>
+  </header><!-- End Header -->
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero1" class="top-magin d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4 top-magin">
+        <div class="col-lg-6  order-2 order-lg-1 newly flex-column justify-content-center">
+          <h1>Smartest Way to</h1>
+          <h1>Preserve & Transfer Wealth</h1>
+          <a href="#about" class="btn btn-primary btn-get-started scrollto">Get Started</a>
+      
+        </div>
+       
+        <div class="col-lg-6 order-1 order-lg-2 hero-img">
+          <img src="assets/img/mcard.png" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class=" modal-dialog modal-side modal-top-right" role="document">
+      <div class="modal-content">
+       
+        <div class="modal-body">
+        
+          <form action="" method="post" role="form" class="">
+            <div class="row">
+                <center><h3 class="p-reg" style="font-weight: 700;">Fill the Form</h3></center>   
+            <div class="col form-group">
+                <label class="" for=""><b>Full Name</b></label>
+                <input type="text" name="name" class="form-control" id="name" placeholder="Enter full name" required>
+            </div>
+            </div>
+            <div class="form-group">
+            <label class="" for=""><b>Phone Number</b></label>
+                <input type="digit" class="form-control" name="phonenumber" id="phonenumber" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="form-group">
+            <label class="" for=""><b>Email</b></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+            <label class="" for=""><b>Name of Officer</b></label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+            </div>
+            <div class="form-group">
+            <label class="" for=""><b>Name of Conduct and Remarks</b></label>
+            <textarea class="form-control" name="message" rows="2" placeholder="Enter Message or request" required></textarea>
+            </div>
+            <div class="text-center ">
+              <button class="col-md-12 btn btn-primary" style="font-weight: 150;" type="submit">Submit</button>
+            </div>
+        </form>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+
+    
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row inside-services">
+          <div class="col-md-4">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="row border-right">
+                <div class="col-md-2 mt-3">
+                  <i class="bi bi-person"></i>
+                </div>
+                <div class="col-md-6 omo-service">
+                 
+                  <h3 data-purecounter-start="0" data-purecounter-end="8000" data-purecounter-duration="1" class="purecounter">8000</h3>
+                  <p>Customers</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="row border-right">
+                <div class="col-md-2 mt-3">
+                  <i class="bi bi-pin"></i>
+                </div>
+                <div class="col-md-6 omo-service">
+                  <h3  data-purecounter-start="0" data-purecounter-end="576864" data-purecounter-duration="1" class="purecounter"></h3>
+                  <p>Supported Countries</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="row">
+                <div class="col-md-2 mt-3">
+                  <i class="bi bi-briefcase"></i>
+                </div>
+                <div class="col-md-6 omo-service">
+                  <h3  data-purecounter-start="0" data-purecounter-end="45600" data-purecounter-duration="1" class="purecounter"></h3>
+                  <p>Transactions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+
+
+    <!-- ======= App Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Innovative Banking Products</h2>
+          <p>Talored to your lifestyle, designed for your <br> personal and business needs</p>
+        </div>
+
+        <div class="row no-gutters">
+          <div class="col-xl-12 d-flex align-items-stretch order-2 order-lg-1">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 icon-box" data-aos="fade-up">
+                  <img src="assets/img/features/open.png">
+                  <span class="">Open an Account Instantly</span>
+                  <p>Need an account? Open an account for your business, your child or yourself in minute</p>
+                  <p class="omo-link"><a style="font-weight: 500;"><a href="account.php">Get Started Now</a> </a></p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                  <img src="assets/img/features/loan.png">
+                  <span>Quick Loan</span>
+                  <p>Get up to a $100k in credit and pay back in  6 - 12month. 1% monthly interest rate .  No hidden  fees.</p>
+                  <p class="omo-link"><a style="font-weight: 500;"><a href="loan.php">Get Started Now</a> </a></p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                 <img src="assets/img/features/bill.png">
+                  <span>Bill Payment</span>
+                  <p>Easily pay bills directly from  your account with us.</p>
+                  <p class="omo-link"><a style="font-weight: 500;"><a href="">Get Started Now</a> </a></p>
+                </div>
+                <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                  <img src="assets/img/features/card.png">
+                 <span>Credit Card Support</span>
+                  <p>Apply for  credit card and also directly make deposits using  your vdebit cards from  any bank in the USA.</p>
+                  <p class="omo-link"><a  style="font-weight: 500;"><a href="admin">Get Started Now</a></a></p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+      </div>
+    </section><!-- End App Features Section -->
+
+
+    <!-- ======= Call -center Section ======= -->
+    <section id="call-center" class="call-center section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row text-center omo-center">
+          <div class="col-md-3">
+            <div class="icon-box omo-call" data-aos="fade-up" data-aos-delay="100">
+              <img src="assets/img/phone.png" alt="">
+              <p>Self Service</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/wistle.png" alt="">
+              <p>Whistel Blower</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/headset.png" alt="">
+              <p>Help Center</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <img src="assets/img/quest.png" alt="">
+              <p>FAQ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End call-center Section -->
+
+
+  
+ 
+  </main><!-- End #main -->
+  
+
+  
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container">
+   
+   
+       <div class="container- d-md-flex py-4">
+   
+         <div class="me-md-auto text-center text-md-start">
+           <div class="copyright footer-loo">
+             <img  src="assets/img/footer-logo.png">
+           </div>
+        
+         
+         </div>
+   
+         <div class="text-md-right pt-3 pt-md-0">
+           <a href="#" style="color: white"  class="social-links "><i class="bx bxl-call-16-regular"> </i>+1 931 322 2222</a>
+            
+           <div class="credits social-links ">
+             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+             <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+           
+           </div>
+         </div>
+   
+   
+      
+         <div class="social-links text-center text-md-right pt-3 pt-md-0">
+         
+         </div>
+       </div>
+       <hr>    
+       <div class="container d-md-flex ">
+   
+         <div class="me-md-auto text-center text-md-start">
+           
+           <div class="credits">
+               &copy; 2021 <strong><span>GBS Bank</span></strong>. All Rights Reserved
+       
+         </div>
+         
+         </div>
+       
+       </div>
+     
+    </div>
+  </footer><!-- End Footer -->
+   
+
+
+  
+     
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  
+  <!-- Template Main JS File -->
+  <script src="assets/js/jquery.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      
+      $('.rege').click(function() {
+        $('#registration').toggle();
+        $('.body').backgroundColor = 'black';
+      });
+      
+  });
+  
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  
+<script>
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+
+  </script>
+  </body>
+  
+  </html>
+  
